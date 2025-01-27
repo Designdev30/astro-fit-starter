@@ -4,22 +4,24 @@ import ContextAlert from '../components/ContextAlert.astro';
 import Markdown from '../components/Markdown.astro';
 
 const explainer = `
-Speak to or message your fitness assistant below, also launch the Zen Yoga and Med Alert Alexa skills below 
+Speak to or message your fitness assistant using the chat widget, also launch the One Assist and Med Alert Alexa skills below 
 to help you reach your fitness goals! 
 
 
 `;
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Fit Assistant">
     <ContextAlert class="mb-4" />
     <h1 class="mb-10">Fitness Assistant</h1>
     <Markdown content={explainer} class="text-lg mb-10" />
     <p class="mb-8">
-        <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg btn-primary sm:btn-wide">Zen Yoga</a>
-        <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg btn-primary sm:btn-wide">Med Alert</a>
+        <!-- <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg btn-primary sm:btn-wide">Zen Yoga</a>
+        <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg btn-primary sm:btn-wide">Med Alert</a> -->
         <!-- <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg btn-primary sm:btn-wide">Read the Docs</a> -->
     </p>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.59/build/spline-viewer.js"></script>
+    <spline-viewer url="https://prod.spline.design/EM9m52pXqDa57po8/scene.splinecode"></spline-viewer>
     <script type="text/javascript">
         (function (d, t) {
             var v = d.createElement(t),
