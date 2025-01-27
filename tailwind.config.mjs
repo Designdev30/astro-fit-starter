@@ -26,7 +26,7 @@ export default {
             {
                 lofi: {
                     ...require('daisyui/src/theming/themes')['lofi'],
-                    primary: '#F67280',
+                    primary: '#FF38ED',
                     'primary-content': '#1f1f1f',
                     secondary: '#C06C84',
                     info: '#F67280',
