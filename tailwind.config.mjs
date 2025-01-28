@@ -10,11 +10,11 @@ export default {
     content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
     theme: {
         extend: {
-            backgroundImage: {
-                'grid-pattern': `linear-gradient(to bottom, theme('colors.neutral.950 / 0%'), theme('colors.neutral.950 / 100%')), url('${noiseDataUri}')`
-            },
+            
             colors: {
                 neutral: colors.neutral
+                
+                
             },
             fontFamily: {
                 sans: ['Inter', ...defaultTheme.fontFamily.sans]
@@ -24,15 +24,18 @@ export default {
     daisyui: {
         themes: [
             {
-                lofi: {
-                    ...require('daisyui/src/theming/themes')['lofi'],
-                    primary: '#FF38ED',
-                    'primary-content': '#1f1f1f',
-                    secondary: '#C06C84',
-                    info: '#F67280',
-                    'info-content': '#1f1f1f'
+                black: {
+                    ...require('daisyui/src/theming/themes')['black'],
+                    // primary: '#FF38ED',
+                    // 'primary-content': '#1f1f1f',
+                    // secondary: '#C06C84',
+                    // info: '#F67280',
+                    // 'info-content': '#1f1f1f',
+                    // backgroundColor: '#181717'
+                    
                 }
-            }
+            },
+            "dark",
         ]
     },
     plugins: [require('daisyui')]

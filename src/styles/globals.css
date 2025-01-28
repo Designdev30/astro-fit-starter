@@ -20,7 +20,7 @@
     }
 
     :not(pre) > code {
-        @apply px-1 py-0.5 font-mono rounded bg-[#1f1f1f] text-[#FF38ED];
+        @apply px-1 py-0.5 font-mono rounded bg-[#0a0a0a] text-[#FF38ED];
         font-size: 0.9em;
     }
 }
@@ -45,6 +45,6 @@
     }
 
     .btn:disabled {
-        @apply text-neutral-400 bg-neutral-700;
+        @apply text-neutral-400 bg-neutral-900;
     }
 }
